@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Brief Player Demo</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Tom Diggle">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../themes/default/briefplayer-default-theme.css" rel="stylesheet" media="all">
+        <script src="soundmanager2/soundmanager2-nodebug-jsmin.js"></script>
+        <script src="../build/briefplayer.min.js"></script>
+    </head>
+
+    <body>
+
+        <script type="text/javascript">
+            soundManager.setup({
+                url: 'soundmanager2/',
+                flashVersion: 9,
+                preferFlash: true,
+                onready: function () {
+                    briefPlayer.createSound('http://briefplayer.com/assets/audio/lolor.mp3');
+                },
+                ontimeout: briefPlayer.events.ontimeout
+            });
+        </script>
+
+        <div id="bp_container" class="briefplayer cf">
+            <div id="bp_interface">
+                <div id="bp_controls">
+                    <a href="javascript:;" id="bp_play" title="Play"></a>
+                    <a href="javascript:;" id="bp_pause" title="Pause"></a>
+                </div>
+                <div id="bp_position" class="bp-time-holder">0:00:00</div>
+                <div class="bp-progress-bar" id="bp_progress_bar">
+                    <div class="bp-bars">
+                        <div id="bp_loaded_bar" class="bp-loaded-bar"></div>
+                        <div id="bp_played_bar" class="bp-played-bar"></div>
+                    </div>
+                </div>
+                <div id="bp_duration" class="bp-time-holder">0:00:00</div>
+            </div>
+            <div id="bp_no_solution">
+                <span>
+                    To play the episode you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                </span>
+            </div>
+        </div>
+
+    </body>
+
+</html>

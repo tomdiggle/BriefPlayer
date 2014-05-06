@@ -1,0 +1,29 @@
+{
+  "name": "briefplayer",
+  "title": "Brief Player",
+  "version": "0.1.0",
+  "description": "Brief Player is a simple JavaScript library allowing easy audio streaming using SoundManager2.",
+  "homepage": "http://briefplayer.com",
+  "author": {
+    "name": "Tom Diggle",
+    "email": "tom@tomdiggle.com",
+    "url": "http://tomdiggle.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tomdiggle/BriefPlayer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tomdiggle/BriefPlayer/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/tomdiggle/BriefPlayer/blob/master/license"
+  },
+  "main": "build/briefplayer.min.js",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-uglify": "^0.4.0"
+  }
+}
